@@ -13,10 +13,26 @@
 }
 
 .gearSlot {
+  position: relative;
   color: #a0a0a0;
   font-size: 14px;
-  padding: 6px 0;
   border-bottom: 1px solid #333;
+  padding: 6px 0;
+}
+
+.tooltip{
+    position: absolute;
+    background-color: #0d0d1a;
+    border: 1px solid #c8a84b;
+    border-radius: 6px;
+    padding: 8px 12px;
+    right: 0;
+    top: -10px;
+    z-index: 10;
+    min-width: 160px;
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 1.6;
 }
 
 .slotName {

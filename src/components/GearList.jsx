@@ -1,8 +1,14 @@
+import { useState } from 'react'
 import styles from './GearList.module.css'
 
 function GearSlot({ slot, name, ilvl }){
+    const [hovered, setHovered] = useState(false)
     return(
-        <div className={styles.gearSlot}>
+        <div 
+            className={styles.gearSlot}
+            onMouseEnter={() => setHovered(true)}
+            onMouseLeave={() => setHovered(false)}
+        >
             <span className={styles.slotName}>{slot}: </span>
             <span className={styles.itemName}>{name}</span>
             <span className={styles.ilvl}>(ilvl {ilvl})</span>
