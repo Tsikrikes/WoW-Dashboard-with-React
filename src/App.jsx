@@ -1,6 +1,8 @@
 import character from './data/characterData'
 import CharacterHeader from './components/CharacterHeader'
 import StatsPanel from './components/StatsPanel'
+import GearList from './components/GearList'
+
 
 
 function App(){
@@ -12,9 +14,10 @@ function App(){
       race={character.race}
       className={character.className}
     />
-      <StatsPanel stats={character.stats}/>
+    <StatsPanel stats={character.stats}/>
+    <GearList gear={character.gear}/>
   </div>
   )
 }
 
-export default App
+export default App  
