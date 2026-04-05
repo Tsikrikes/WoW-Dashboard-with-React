@@ -1,0 +1,35 @@
+.panel {
+  background-color: #1a1a2e;
+  border: 1px solid #c8a84b;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.title {
+  color: #c8a84b;
+  font-size: 18px;
+  margin: 0 0 12px 0;
+}
+
+.gearSlot {
+  color: #a0a0a0;
+  font-size: 14px;
+  padding: 6px 0;
+  border-bottom: 1px solid #333;
+}
+
+.slotName {
+  color: #c8a84b;
+  margin-right: 8px;
+}
+
+.itemName {
+  color: #ffffff;
+  margin-right: 8px;
+}
+
+.ilvl {
+  color: #1eff00;
+  font-size: 12px;
+}
