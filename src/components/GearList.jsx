@@ -3,6 +3,7 @@ import styles from './GearList.module.css'
 
 function GearSlot({ slot, name, ilvl }){
     const [hovered, setHovered] = useState(false)
+    
     return(
         <div 
             className={styles.gearSlot}
@@ -12,6 +13,13 @@ function GearSlot({ slot, name, ilvl }){
             <span className={styles.slotName}>{slot}: </span>
             <span className={styles.itemName}>{name}</span>
             <span className={styles.ilvl}>(ilvl {ilvl})</span>
+            {hovered && (
+                <div className={styles.tooltip}>
+                    <p>{name}</p>
+                    <p>Item Level: {ilvl}</p>
+                    <p>Slot: {slot}</p>
+                </div>
+            )}
         </div>
     )
 }
